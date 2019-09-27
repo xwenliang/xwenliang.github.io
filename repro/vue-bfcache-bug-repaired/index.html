@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>vue-bfcache-test</title><style>html,body{
+        height: 100%;
+      }
+      #app{
+        height: 100%;
+      }
+      #log{
+        position: fixed;
+        top: 30px;
+        left: 0;
+        font-size: 16px;
+      }
+
+      .go{
+        background-color: #fff;
+        position: fixed;
+        top: 400px;
+        left: 20px;
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+      }
+      h1{
+        position: fixed;
+        top: 50px;
+        left: 0;
+      }</style><script>function go() {
+          location.href = "https://xwenliang.cn"
+      }
+      function myFunction(event) {
+          console.log(event)
+          document.getElementById('log').innerHTML = "该页面是否从浏览器缓存中读取? " + event.persisted+"|时间戳："+Date.now()
+      }</script><link href=/repro/vue-bfcache-bug-repaired/static/css/app.f982f8998b47b352a3764a1e100482bd.css rel=stylesheet></head><body onpageshow=myFunction(event)><h1>vue@2.6.10 修复 bfcache</h1><div id=app></div><div id=log></div><div class=go onclick=go()>跳转到下一页</div><script type=text/javascript src=/repro/vue-bfcache-bug-repaired/static/js/manifest.ffaa1bba3221192d6406.js></script><script type=text/javascript src=/repro/vue-bfcache-bug-repaired/static/js/vendor.86c95e8285686a151f55.js></script><script type=text/javascript src=/repro/vue-bfcache-bug-repaired/static/js/app.9ece37444293a77338d5.js></script></body></html>
