@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iOS-safari-spa-blank-page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul, li{
+            list-style: none;
+        }
+        li{
+            height: 400px;
+            line-height: 400px;
+            text-align: center;
+            background: #aaa;
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .status{
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+        }
+        .detail{
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="status">
+        <a class="btn" href="#detail">跳一下</a>
+        <div id="status"></div>
+    </div>
+    <div id="ul"></div>
+    <script>
+        function renderIndex(){
+            // 这里一定要异步渲染，同步渲染则没有此问题
+            setTimeout(function(){
+                // 异步设置 body 的高度，返回的时候滚动位置会保存，但刷新页面滚动位置会丢失
+                document.body.style.height = '2080px';
+                document.getElementById('ul').innerHTML = '<ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul>';
+            }, 1000);
+        };
+        function renderDetail(){
+            document.getElementById('ul').innerHTML = '<h1 class="detail">Detail</h1>'
+        };
+
+        function render(){
+            var hash = location.hash;
+            if(hash === '#detail'){
+                renderDetail();
+            }
+            else{
+                renderIndex();
+            }
+        };
+
+        render();
+        // 监听 hashchange 也会出现同样的问题
+        window.addEventListener('popstate', function(e){
+            render();
+        });
+
+        window.addEventListener('pageshow', function(e){
+            document.getElementById('status').innerHTML = '是否从BFCache中读取: ' + e.persisted;
+        });
+    </script>
+</body>
+</html>

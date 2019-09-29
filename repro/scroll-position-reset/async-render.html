@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>async render lose scroll position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul, li{
+            list-style: none;
+        }
+        li{
+            height: 400px;
+            line-height: 400px;
+            text-align: center;
+            background: #aaa;
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="ul"></ul>
+    <script>
+        setTimeout(function(){
+            document.getElementById('ul').innerHTML = '<li>1</li><li>2</li><li>3</li><li>4</li><li>5</li>';
+        }, 100);
+    </script>
+</body>
+</html>
