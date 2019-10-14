@@ -1,7 +1,7 @@
-### `npm install`  
+### step1. `npm install`  
 
-### `npm run server`  
+### step2. `npm run server`  
 
-### open another terminal, then `npm run upload`  
+### step3. open another terminal, then `npm run upload`  
 
-### check output of first terminal  
+### step4. check output of first terminal  
