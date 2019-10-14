@@ -1,0 +1,21 @@
+# OSX
+#
+.DS_Store
+
+# node.js
+#
+node_modules
+npm-debug.log
+
+# BUCK
+.idea
+.vscode
+dist/
+build/
+upload/
+
+# yarn
+yarn.lock
+
+#sensitive infomation
+private.json
