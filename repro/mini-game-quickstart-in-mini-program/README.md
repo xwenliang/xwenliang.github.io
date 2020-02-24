@@ -6,4 +6,7 @@
 - 路径 `pages/game/mini-game-quickstart` 为小游戏官方 quickstart 修改后的代码  
 - 和小游戏官方 quickstart 的代码差异可对比 [mini-game-quickstart](../mini-game-quickstart)  
 - 搜索 `zooble` 可以快速定位修改位置  
-- bug: 小游戏页面返回后，微信开发者工具不能停止音乐，真机没问题
+- bug: 小游戏页面返回后，微信开发者工具不能停止音乐，真机没问题  
+- 相关环境版本：  
+    - Wechat Devtools: 1.02.1911180  
+    - Debug Base Library: 2.10.1  
