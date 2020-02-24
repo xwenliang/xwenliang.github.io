@@ -5,10 +5,9 @@ import GameInfo   from './runtime/gameinfo'
 import Music      from './runtime/music'
 import DataBus    from './databus'
 
-let canvas = wx.canvas;//zooble
-let ctx   = wx.canvas.getContext('2d');//zooble
 let databus = new DataBus()
-
+let addEventListener = wx.canvas.addEventListener;//zooble
+let removeEventListener = wx.canvas.removeEventListener;//zooble
 /**
  * 游戏主函数
  */
@@ -17,17 +16,41 @@ export default class Main {
     // 维护当前requestAnimationFrame的id
     this.aniId    = 0
     
+    this.updateCtx();//zooble
     this.restart()
+
+    return this;//zooble
+  }
+
+  //zooble
+  updateCtx() {
+    this.canvas = wx.canvas;
+    this.canvas.addEventListener = addEventListener;
+    this.canvas.removeEventListener = removeEventListener;
+    this.ctx = wx.canvas.getContext('2d');
+  }
+  //zooble
+  pause() {
+    this.canvas.cancelAnimationFrame(this.aniId);
+    this.music.stopAll();
+    // this.ctx = null;
+  }
+  //zooble
+  resume() {
+    this.restart();
+    this.music.playBgm();
+    this.updateCtx();
   }
 
   restart() {
     databus.reset()
 
-    canvas.removeEventListener(
+    this.canvas.removeEventListener(
       'touchstart',
       this.touchHandler
     )
     
+    const ctx     = this.ctx;//zooble
     this.bg       = new BackGround(ctx)
     this.player   = new Player(ctx)
     this.gameinfo = new GameInfo()
@@ -37,11 +60,11 @@ export default class Main {
     this.hasEventBind = false
     
     // 清除上一局的动画
-    canvas.cancelAnimationFrame(this.aniId);//zooble
+    this.canvas.cancelAnimationFrame(this.aniId);//zooble
  
-    this.aniId = canvas.requestAnimationFrame(//zooble
+    this.aniId = this.canvas.requestAnimationFrame(//zooble
       this.bindLoop,
-      canvas
+      this.canvas
     )
   }
 
@@ -110,7 +133,8 @@ export default class Main {
    * 每一帧重新绘制所有的需要展示的元素
    */
   render() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    const ctx = this.ctx;//zooble
+    ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
 
     this.bg.render(ctx)
 
@@ -137,7 +161,7 @@ export default class Main {
       if ( !this.hasEventBind ) {
         this.hasEventBind = true
         this.touchHandler = this.touchEventHandler.bind(this)
-        canvas.addEventListener('touchstart', this.touchHandler)
+        this.canvas.addEventListener('touchstart', this.touchHandler)
       }
     }
   }
@@ -172,9 +196,9 @@ export default class Main {
     this.update()
     this.render()
 
-    this.aniId = canvas.requestAnimationFrame(//zooble
+    this.aniId = this.canvas.requestAnimationFrame(//zooble
       this.bindLoop,
-      canvas
+      this.canvas
     )
   }
 }

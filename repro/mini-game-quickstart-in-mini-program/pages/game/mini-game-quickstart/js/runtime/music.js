@@ -23,6 +23,16 @@ export default class Music {
 
     this.playBgm()
   }
+  //zooble
+  stopAll() {
+    // 开发者工具：TypeError: this.bgmAudio.stop is not a function
+    // 真机正常运行
+    if(wx.info.platform !== 'devtools'){
+      this.bgmAudio.stop()
+      this.shootAudio.stop()
+      this.boomAudio.stop()
+    }
+  }
 
   playBgm() {
     this.bgmAudio.play()
@@ -37,13 +47,13 @@ export default class Music {
     // 小程序真机可以用 InnerAudioContext.seek 代替
     // 然而小程序开发环境并没有这个API，报 TypeError: this.shootAudio.seek is not a function
     // 所以才有了这段代码
-    wx.info.platform === 'devtools' ? (this.shootAudio.currentTime = 0) : this.shootAudio.seek(0)
+    wx.info.platform === 'devtools' ? (this.shootAudio.currentTime = 0) : this.shootAudio.seek(0)//zooble
     this.shootAudio.play()
   }
 
   playExplosion() {
     // this.boomAudio.currentTime = 0
-    wx.info.platform === 'devtools' ? (this.boomAudio.currentTime = 0) : this.boomAudio.seek(0)
+    wx.info.platform === 'devtools' ? (this.boomAudio.currentTime = 0) : this.boomAudio.seek(0)//zooble
     this.boomAudio.play()
   }
 }

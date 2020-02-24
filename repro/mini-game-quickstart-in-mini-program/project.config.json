@@ -15,7 +15,7 @@
 		"scopeDataCheck": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.10.2",
+	"libVersion": "2.10.1",
 	"appid": "wxd2a5d22c70c051c8",
 	"projectname": "mini-game-quickstart-in-mini-program",
 	"debugOptions": {

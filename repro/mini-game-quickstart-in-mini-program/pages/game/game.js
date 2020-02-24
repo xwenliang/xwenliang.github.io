@@ -34,6 +34,11 @@ Page({
         })
         .exec(this.init.bind(this));
     },
+    onUnload(){
+        if(wx.game){
+            wx.game.pause();
+        }
+    },
     init(res){
         const canvas = res[0].node;
         wx.canvas = canvas;
@@ -49,8 +54,11 @@ Page({
             // js/libs/weapp-adapter.js#L787 改写，此处其实无效
             return wx.canvas.createImage();
         };
+        if(wx.game){
+            return wx.game.resume();
+        }
         // load game
-        require('./mini-game-quickstart/game');
+        wx.game = require('./mini-game-quickstart/game').default;
     },
     touchStart(event){
         wx.touchStartFns.reduce((calc, el) => {
