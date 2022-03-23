@@ -54,4 +54,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 exclude:
-  - repro/
+  repro/
+
+minima:
+  date_format: "%Y-%M-%d"
