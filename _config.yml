@@ -1,1 +1,4 @@
 theme: jekyll-theme-slate
+plugins: [jekyll-paginate]
+paginate: 20 # 每页文章数
+paginate_path: "essay/page:num" # 可选，分页链接
