@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "我们 好 Welcome to Jekyll!!!!"
+title:  "kan lai bu zhichi zhong wen a"
 date:   2022-03-14 05:13:01 +0800
 categories: javascript test
 ---
