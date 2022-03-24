@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "kan lai bu zhichi zhong wen a"
+title:  "你好"
 date:   2022-03-14 05:13:01 +0800
 categories: javascript test
 ---
