@@ -10,6 +10,8 @@ npm-debug.log
 # BUCK
 .idea
 .vscode
+.jekyll-cache/
+_site
 dist/
 build/
 
