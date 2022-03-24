@@ -35,4 +35,32 @@
   </div>
 
 </footer> -->
-<footer></footer>
+<footer>
+  {% if site.paginate and paginator.total_pages > 1 %}
+    <ul class="pagination">
+
+      {% if paginator.previous_page %}
+        <li><a class="page-prev" href="{{ paginator.previous_page_path | relative_url }}"></a></li>
+      {% else %}
+        <li><span class="page-prev"></span></li>
+      {% endif %}
+
+      {%- for pageIndex in (1..paginator.total_pages) -%}
+        {% if pageIndex == paginator.page %}
+          <li><span class="current-page">{{ pageIndex }}</span></li>
+        {% elsif pageIndex == 1 %}
+          <li><a class="common-page" href="{{ '/' | relative_url }}">{{ pageIndex }}</a></li>
+        {% else %}
+          <li><a class="common-page" href="{{ site.paginate_path | relative_url | replace: ':num', pageIndex }}">{{ pageIndex }}</a></li>
+        {% endif %}
+      {%- endfor -%}
+
+      {% if paginator.next_page %}
+        <li><a class="page-after" href="{{ paginator.next_page_path | relative_url }}"></a></li>
+      {% else %}
+        <li><span class="page-after"></span></li>
+      {% endif %}
+
+    </ul>
+  {%- endif %}
+</footer>

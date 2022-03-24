@@ -33,10 +33,11 @@ github_username: xwenliang
 # Build settings
 theme: minima
 minima:
-  date_format: "%Y-%M-%d"
+  date_format: "%Y-%m-%d %H:%M:%S"
 
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -63,3 +64,7 @@ exclude:
 
 timezone: Asia/Shanghai
 
+paginate: 20
+paginate_path: "/page:num/"
+# 文章摘要
+show_excerpts: true
