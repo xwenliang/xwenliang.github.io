@@ -32,7 +32,7 @@ github_username:  jekyll
 # Build settings
 theme: minima
 minima:
-  date_format: "%Y-%M-%d"
+  date_format: "%Y-%m-%d"
 
 plugins:
   - jekyll-feed
