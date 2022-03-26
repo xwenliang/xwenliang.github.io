@@ -64,7 +64,10 @@ exclude:
 
 timezone: Asia/Shanghai
 
-paginate: 20
+paginate: 10
 paginate_path: "/page:num/"
 # 文章摘要
+# By default this is the first paragraph of content in the post, 
+# however it can be customized by setting a excerpt_separator variable in front matter or _config.yml.
+# excerpt_separator: <!--more-->
 show_excerpts: true
