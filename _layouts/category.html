@@ -1,14 +1,29 @@
 ---
 layout: default
+# title: Translation
+# order: 3
+# permalink: /translation/
 ---
-<article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+{%- if page.title -%}
+<h1 class="page-heading">{{ page.title }}</h1>
+{%- endif -%}
 
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-</article>
+<div class="category">
+  <ul class="category-list">
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {%- assign category = page.title | downcase -%}
+    {%- for post in site.posts -%}
+    {%- if post.categories contains category -%}
+    <li>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+    </li>
+    {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</div>

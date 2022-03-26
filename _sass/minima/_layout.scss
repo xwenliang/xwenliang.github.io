@@ -411,3 +411,24 @@
     width: calc(50% - (#{$spacing-unit} / 2));
   }
 }
+
+
+/**
+ * category
+ */
+.category{
+  .category-list{
+    margin: 0;
+    list-style: none;
+    li{
+      margin-bottom: 20px;
+    }
+    h3{
+      margin-bottom: 0;
+    }
+    .post-link{
+      font-size: 18px;
+      display: inline;
+    }
+  }
+}

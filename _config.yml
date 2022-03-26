@@ -64,6 +64,7 @@ exclude:
 
 timezone: Asia/Shanghai
 
+# only works in index.html
 paginate: 10
 paginate_path: "/page:num/"
 # 文章摘要
