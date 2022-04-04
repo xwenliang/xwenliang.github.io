@@ -1,33 +1,19 @@
 ---
 layout: post
-title: "this is a draft"
-date: 2022-03-14 05:13:01 +0800
-categories: javascript
+title: test
+# date 同时用作关联 github issue 的唯一标识，所以不可重复
+date: 2022-01-31 11:11:11+0800
+categories: translation
 # permalink: /xxx/
 
+# https://jekyllrb.com/docs/structure/
+# name of this file show be in format of: YEAR-MONTH-DAY-title.MARKUP
 # `jekyll serve --drafts` to preview drafts
 ---
 
-You’ll find this post in your `_drafts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --drafts`, which launches a web server and auto-regenerates your site when a file is updated.
+第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的第一段落就是用来做介绍的
 
-Jekyll requires blog post files to be named according to the following format:
+> 翻译自：https://developers.google.com/web/updates/2017/09/sticky-headers  
 
-`title.MARKUP`
+<!--more-->
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
