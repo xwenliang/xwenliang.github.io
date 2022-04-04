@@ -59,8 +59,8 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-exclude:
-  - repro/
+# exclude:
+#   - repro/
 
 timezone: Asia/Shanghai
 
