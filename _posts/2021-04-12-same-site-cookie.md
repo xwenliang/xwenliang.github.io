@@ -10,6 +10,7 @@ categories: frontend
 # name of this file show be in format of: YEAR-MONTH-DAY-title.MARKUP
 ---
 
+
 web 开发发展到现在，前端和后端几乎已经完全分离了，不仅部署的环境分离，很多时候域名也是分离的。今天主要讨论一个不同域名下前后端交互所带来的问题。
 
 ---  
