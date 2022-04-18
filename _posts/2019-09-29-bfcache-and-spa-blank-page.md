@@ -12,27 +12,28 @@ categories: frontend
 
 
 ### 什么是BFCache  
+  
 back-forward cache, 为浏览器前进/后退时准备的缓存  
-    
+
 [官方解释](https://developer.mozilla.org/en-US/docs/Archive/Misc_top_level/Working_with_BFCache)提到了 nsIDOMWindow ，那什么是 [nsIDOMWindow](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIDOMWindow) 呢？  
-    
+
 它是 Gecko 内核标准下的一个 interface, 它主要描述了一个承载了 Document Object Model(DOM)的容器，也就是我们常用的 window 根对象。
-    
+
 与之很像的还有一个叫做 [nsIXULWindow](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIXULWindow) 的，它又是干嘛的呢？
-    
+
 XUL的字面意思是 XML-based User Interface Language, [stackoverflow](https://stackoverflow.com/questions/21626687/nsixulwindow-vs-nsidomwindow) 上说它是一个 XUL Application Object Model(AOM) window, 大致看了下 nsIXULWindow 的[具体实现](https://github.com/mozilla/newtab-dev/blob/master/xpfe/appshell/nsXULWindow.cpp), 感觉它应该是浏览器 tab 标签(或新窗口)的实现，那么它和 nsIDOMWindow 的差异就很明显了:  
 
 1. nsIXULWindow 描述的是浏览器标签(窗口)，它还包含浏览器书签、浏览器菜单、配置等内容，nsIDOMWindow 只描述了承载DOM内容的window对象  
 2. nsIXULWindow 一个浏览器标签(窗口)只会有一个，nsIDOMWindow 则可以有多个(页面存在iframe的时候)   
-    
+
 而 nsIDOMWindow 又分为了 [outer window 和 inner window](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Inner_and_outer_windows), 这两者又代表着什么呢？  
-    
+
 outer window 可以理解为浏览器当前上下文，它可以是一个窗口、一个标签甚至是一个 iframe,  
-    
+
 inner window 是用户当前所看到的具体内容，下面这张图很好的说明了他们的关系：
-    
+
 ![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-19-4a5483655d.jpg)  
-    
+
 蓝色部分是一个个的 inner window, 灰色的框子是 outer window, 在有BFCache的场景里面，你可以认为浏览器只是移动了 outer window 的坐标来直接给你展示已经被 cache 起来的内容  
 
 离开将要被 BFCache 的页面时，页面的 dom 状态以及 js 执行状态都将被冻结，再次打开 BFCache 中的页面，dom不会重新渲染，js不会重新执行，window.onload 也不会被触发，计时器会根据离开时的状态继续运行  
