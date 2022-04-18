@@ -65,7 +65,7 @@ plugins:
 timezone: Asia/Shanghai
 
 # only works in index.html
-paginate: 10
+paginate: 20
 paginate_path: "/page:num/"
 # 文章摘要
 # By default this is the first paragraph of content in the post, 
