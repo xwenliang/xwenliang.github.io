@@ -13,7 +13,7 @@ categories: backend
 
 大概在今年 `6·18` 的前几天，我们发现分享至好友和朋友圈的营销活动链接被频繁封禁：  
 
-![IMAGE]](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-19-9879980e7b.jpg)  
+![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-19-9879980e7b.jpg)  
 
 经过大量被封禁链接的规律分析发现，目前微信封禁的是初次访问的 url 中的 path 部分，改变 path 即可临时解封。（如果页面有二次跳转，那么微信封禁的会是跳转前的 url 地址）  
 
