@@ -11,7 +11,7 @@ categories: frontend
 ---
 
 
-### 什么是BFCache  
+#### 什么是BFCache  
   
 back-forward cache, 为浏览器前进/后退时准备的缓存  
 
@@ -40,7 +40,7 @@ inner window 是用户当前所看到的具体内容，下面这张图很好的�
 
 ---
 
-### 如何判断是否命中 BFCache  
+#### 如何判断是否命中 BFCache  
 
 那么如何判断是不是进入了一个被 BFCache 的页面，或者当前要离开的页面是不是将要被 BFCache? 答案是 pagehide/pageshow  
 
@@ -55,7 +55,7 @@ inner window 是用户当前所看到的具体内容，下面这张图很好的�
 
 ---
 
-### 哪些情况下页面不会被 BFCache 命中  
+#### 哪些情况下页面不会被 BFCache 命中  
 
 Firefox:  
 1. 页面有监听 `unload` 或 `beforeunload`  
@@ -88,7 +88,7 @@ vue@2.5.x 使用 `MessageChannel` 来修复了一些小问题，但它的存在�
 
 --- 
 
-### SPA 应用在 iOS Safari 下页面白屏问题  
+#### SPA 应用在 iOS Safari 下页面白屏问题  
 
 使用 vue 或 react 开发的单页面应用我们经常遇到以下场景：  
 
@@ -138,7 +138,7 @@ window.addEventListener('pageshow', function(e){
 
 ---
 
-### 为何会出现这个问题呢，跟 BFCache 有什么关系吗？  
+#### 为何会出现这个问题呢，跟 BFCache 有什么关系吗？  
 
 目前还未找到相关的证据，但是按照目前官方文档对 BFCache 的解释：用户点击了链接导致浏览器替换了当前窗口里的内容(new page), 跳转到了新地址，才会发生这一行为，通过上面的代码也可以看到，BFCache 确实没有触发    
 
