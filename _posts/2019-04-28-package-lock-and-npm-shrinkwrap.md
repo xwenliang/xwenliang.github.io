@@ -3,7 +3,7 @@ layout: post
 title: package-lock 和 npm-shrinkwrap
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2019-04-28 21:54:14+0800
-categories: frontend
+categories: backend
 # permalink: /xxx/
 
 # https://jekyllrb.com/docs/structure/
