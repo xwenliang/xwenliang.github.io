@@ -1,0 +1,21 @@
+{
+  "name": "webpack-dev-server-write-file-to-disk",
+  "version": "1.0.0",
+  "description": "webpack-dev-server write file to disk",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node webpack.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.11.2"
+  }
+}
