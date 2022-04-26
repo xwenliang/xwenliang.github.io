@@ -3,7 +3,7 @@ layout: post
 title: 再谈 webpack-dev-server 之 proxy
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2018-04-23 17:26:25+0800
-categories: backend
+categories: frontend
 # permalink: /xxx/
 
 # https://jekyllrb.com/docs/structure/
