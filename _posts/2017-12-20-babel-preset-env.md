@@ -11,7 +11,7 @@ categories: frontend
 ---
 
 
-之前的文章提到[我的小伙伴踩中了 babel 的坑](https://xwenliang.github.io/backend/2017/11/16/why-babel.html)，当时只是找到了问题的原因，然后给了一个比较潦草的解决方法：直接引入低版本浏览器不兼容的 API. 但是在实际开发中我们不可能熟知各个浏览器对 API 的兼容情况，导致只能报错之后再去补救，显然这不是个优秀的方案，下面我们就探讨一下如何优雅的避免此类问题的发生。  
+之前的文章提到[我的小伙伴踩中了 babel 的坑](https://xwenliang.github.io/frontend/2017/11/16/why-babel.html)，当时只是找到了问题的原因，然后给了一个比较潦草的解决方法：直接引入低版本浏览器不兼容的 API. 但是在实际开发中我们不可能熟知各个浏览器对 API 的兼容情况，导致只能报错之后再去补救，显然这不是个优秀的方案，下面我们就探讨一下如何优雅的避免此类问题的发生。  
 
 先尝试使用 vue-cli [构建项目](https://github.com/xwenliang/xwenliang.github.io/tree/master/repro/test-vue-cli)，我们发现它的初始模版中同时配置了 `babel-preset-env` 和 `babel-plugin-transform-runtime`：  
 
@@ -36,7 +36,7 @@ categories: frontend
 }
 ```
 
-由于 `babel-preset-env` 并没有开启 `useBuiltIns`, 且模版代码中也没有引入 polyfill, 导致不太熟悉 babel 环境的同学直接拿来用会[踩到坑](https://xwenliang.github.io/backend/2017/11/16/why-babel.html)  
+由于 `babel-preset-env` 并没有开启 `useBuiltIns`, 且模版代码中也没有引入 polyfill, 导致不太熟悉 babel 环境的同学直接拿来用会[踩到坑](https://xwenliang.github.io/frontend/2017/11/16/why-babel.html)  
 
 我们尝试在 main.js 中加入以下代码：  
 
