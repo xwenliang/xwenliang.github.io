@@ -34,7 +34,7 @@ var hiddenWidth = $html.width();
 var scrollBarWidth = hiddenWidth - scrollWidth;
 ```
 
-费了很大劲重新跑起来了当时的版本，效果如下图：  
+效果如下图：  
 
 ![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-29-514fc17f94.gif)  
 
