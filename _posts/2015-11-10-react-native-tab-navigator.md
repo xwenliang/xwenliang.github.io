@@ -69,6 +69,8 @@ TabBarItemIOS.ios.js
 
 示例代码：  
 
+[//]: # ( comment in markdown and escape for jekyll use: {% raw %} )  
+
 ```javascript
 'use strict';
 
@@ -156,4 +158,6 @@ StatusBarIOS.setStyle('light-content');
 
 AppRegistry.registerComponent('main', () => HiddenTabBarDemo);
 ```
+
+[//]: # ( comment in markdown and escape for jekyll use: {% endraw %} )  
 

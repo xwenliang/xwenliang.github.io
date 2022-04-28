@@ -65,6 +65,8 @@ var NavigatorSceneConfigs = {
 
 我们可以看到，这个动画配置里面有一系列的相关参数，其中与动画过程相关的就是 animationInterpolators 这个属性，它分别定义了进场和出场的动画（这些进出场动画在该文件顶部都有定义），了解了这些配置，我们就可以灵活定义各种进出场动画了，例如：  
 
+[//]: # ( comment in markdown and escape for jekyll use: {% raw %} )  
+
 ```javascript
 <Navigator  
 	style={styles.container}
@@ -99,6 +101,8 @@ var NavigatorSceneConfigs = {
 	}}
 />
 ```
+
+[//]: # ( comment in markdown and escape for jekyll use: {% endraw %} )  
 
 涉及到 iOS 平台，要么不隐藏 navigationBar, 使用 NavigatorIOS 自带的右滑返回，如果一定要隐藏 navigationBar, 那就只能使用 Navigator, 然后定义一组跟原生进出场动画相同的动画了。  
 
