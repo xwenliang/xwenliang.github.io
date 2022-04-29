@@ -5,6 +5,7 @@ title: 监听 CSS position:sticky 的事件
 date: 2022-01-30 16:08:48+0800
 # 原文发表时间
 orig_date: 2017-09-19
+orig_link: https://developers.google.com/web/updates/2017/09/sticky-headers
 categories: translation
 # permalink: /xxx/
 
