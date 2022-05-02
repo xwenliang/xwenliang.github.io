@@ -2,7 +2,7 @@
 layout: post
 title: url中的#
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
-date: 014-04-11 00:45:54+0800
+date: 2014-04-11 00:45:54+0800
 orig_link: https://xwenliang.cn/p/5346cac282c53bab4adf8026
 categories: frontend
 # permalink: /xxx/
