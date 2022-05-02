@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>图片轮播</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="jx_lb_wrap">
+	<div id="myFocus" class="myFocus"><!--焦点图盒子-->
+	    <ul class="pic" id="pic"><!--内容列表-->
+	    	<li><a href="javascript:"><img src="1.jpg"></a></li>
+	    	<li><a href="javascript:"><img src="2.jpg"></a></li>
+	    	<li><a href="javascript:"><img src="3.jpg"></a></li>
+	    	<li><a href="javascript:"><img src="4.jpg"></a></li>
+	    	<li><a href="javascript:"><img src="5.jpg"></a></li>
+	    	<li><a href="javascript:"><img src="6.jpg"></a></li>
+	    </ul>
+		<ul id= "num_ul" class="num_ul">
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+		</ul>
+	</div>
+</div>
+</body>
+<script src="MyBox.js"></script>
+<script>
+	var mybox = new MyBox({
+		containerId: 'myFocus',
+		cellUlId: 'pic',
+		btnUlId: 'num_ul',
+		cellTagName: 'li',
+		interval: 2000
+	});
+	mybox.init();
+</script>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>图片轮播</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="jx_lb_wrap">
+	<div id="myFocus" class="myFocus"><!--焦点图盒子-->
+	    <ul class="pic" id="pic"><!--内容列表-->
+	    	<li><a href="javascript:" target="_blank"><img src="1.jpg" alt="庆葡萄酒分站上线 拉菲1元购 全品类同贺 狂欢6天"></a></li>
+	    	<li><a href="javascript:" target="_blank"><img src="2.jpg" alt="白酒直降分会场 4.9元疯抢 爆款低至3折"></a></li>
+	    	<li><a href="javascript:" target="_blank"><img src="3.jpg" alt="葡萄酒分会场 100%返现 狂欢不断"></a></li>
+	    	<li><a href="javascript:" target="_blank"><img src="4.jpg" alt="洋酒分会场 1元起 人头马免费送"></a></li>
+	    	<li><a href="javascript:" target="_blank"><img src="5.jpg" alt="白酒满减分会场 每满200立减100 上不封顶"></a></li>
+	    	<li><a href="javascript:" target="_blank"><img src="6.jpg" alt="葡萄酒名庄分会场 品牌名庄 全网最低"></a></li>
+	    </ul>
+		<ul id= "num_ul" class="num_ul">
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+		</ul>
+	</div>
+</div>
+</body>
+<script src="MyBox.js"></script>
+<script>
+	window.onload = function(){
+		var box = new MyBox("myFocus", {"oUl": "pic", "oBtn": "num_ul", "speed": 2000});
+	};
+</script>
+</html>
