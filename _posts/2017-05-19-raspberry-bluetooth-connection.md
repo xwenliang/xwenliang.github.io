@@ -3,6 +3,7 @@ layout: post
 title: 树莓派 raspberry 连接蓝牙音箱播放音乐的小折腾
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2017-05-19 11:26:28+0800
+orig_link: https://xwenliang.cn/p/57ea7ef7866ef7873c000060
 categories: backend
 # permalink: /xxx/
 
@@ -78,4 +79,52 @@ Google 搜索了很久也没找到正确答案，期间还怀疑人生重装过�
 后来发现如果不先执行 `pulseaudio -D` 的话，这个 Sound & Video 选项也是打不开的，其实这些图形界面的操作也是更改了某些配置文件而已，直接更改配置文件应该更简单高效，后续有时间再看吧  
 
 接下来就是看看如何开机启动 pulseaudio, 然后连接蓝牙音箱进行播报 IP 了  
+
+---
+
+倒腾来倒腾去，各种方法都试了：修改配置文件、添加脚本到 init.d、添加命令到 rc.local 等等都无效，后来看到官方解释说这东西不建议开机启动，也就没再折腾了，就凑合着用耳机听吧。。。  
+
+既然要播报，那得找个发声的接口啊，突然想到百度翻译好像可以发出单词读音，赶紧找到接口来试了下：[点我试听](http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=1&text=%E4%BB%8E%E5%89%8D%E6%9C%89%E5%BA%A7%E5%B1%B1%EF%BC%8C%E5%B1%B1%E9%87%8C%E6%9C%89%E5%BA%A7%E5%BA%99%EF%BC%8C%E5%BA%99%E9%87%8C%E6%9C%89%E4%B8%AA%E8%80%81%E5%92%8C%E5%B0%9A)  
+
+还不错吧，不知道用多了会不会被封 IP...  
+
+下面是代码，为了图方便就用了我大 python:  
+
+```python
+#!/usr/bin/evn python
+# coding=utf-8
+import os
+import sys
+import time
+import socket
+import subprocess
+
+def getIP():
+    ip = None
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(('8.8.8.8', 0))
+        ip = s.getsockname()[0]
+    except:
+        print '仍在获取'
+    return ip
+
+def talk(text, speed=2):
+    speechUrl = "http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=%s&text=%s" % (speed, text)
+    subprocess.call(["mplayer", speechUrl], shell=False, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+if __name__ == "__main__":
+    count = 0
+    while True:
+        ip = getIP()
+        if ip == None:
+            talk('正在获取 IP 地址')
+        else:
+            count += 1
+            talk('IP 地址是')
+            talk(ip)
+        if count == 3:
+            break
+        time.sleep(2)
+```
 
