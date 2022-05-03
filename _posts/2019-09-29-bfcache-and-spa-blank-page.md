@@ -3,6 +3,7 @@ layout: post
 title: BFCache 与 SPA单页面应用前进后退导致白屏
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2019-09-29 18:17:54+0800
+sync_link: https://xwenliang.cn/p/5d9084d22754c3df37000001
 categories: frontend
 # permalink: /xxx/
 

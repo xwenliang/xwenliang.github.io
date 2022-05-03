@@ -3,6 +3,7 @@ layout: post
 title: 迟迟未到的 babel-preset-env@2
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2018-04-24 18:20:34+0800
+sync_link: https://xwenliang.cn/p/5ac228aaf4c855403a000001
 categories: frontend
 # permalink: /xxx/
 

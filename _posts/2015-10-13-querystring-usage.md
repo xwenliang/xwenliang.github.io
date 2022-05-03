@@ -3,6 +3,7 @@ layout: post
 title: querystring 的坑
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-10-13 18:50:32+0800
+sync_link: https://xwenliang.cn/p/5618b76d4544e24332000004
 categories: backend
 # permalink: /xxx/
 
@@ -12,7 +13,7 @@ categories: backend
 
 
 记得上次博客改版的时候遇到过一个问题，感觉数据从前端 post 到服务端后发生了不正常的改变，当时也没有多想，写了几行 hack 解决了。幸亏当时留下了大量的注释，否则今天再看见那段 hack 肯定摸不着头脑：  
-  
+
 ```javascript
 req.body = querystring.parse(postData.join(''));
 postData = null;

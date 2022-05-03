@@ -3,6 +3,7 @@ layout: post
 title: The bundle identifier contains disallowed characters
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-10-23 18:51:14+0800
+sync_link: https://xwenliang.cn/p/562a0c677bda81f63f000002
 categories: frontend
 # permalink: /xxx/
 

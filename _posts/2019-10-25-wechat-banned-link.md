@@ -3,6 +3,7 @@ layout: post
 title: 微信封禁链接小结
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2019-10-25 20:53:52+0800
+sync_link: https://xwenliang.cn/p/5ca568345afc23d55e000007
 categories: backend
 # permalink: /xxx/
 

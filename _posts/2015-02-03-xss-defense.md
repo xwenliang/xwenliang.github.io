@@ -3,7 +3,7 @@ layout: post
 title: xss 初级防范
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-02-03 11:42:57+0800
-orig_link: https://xwenliang.cn/p/53c4fef992e6d4e93e000001
+sync_link: https://xwenliang.cn/p/53c4fef992e6d4e93e000001
 categories: frontend
 # permalink: /xxx/
 

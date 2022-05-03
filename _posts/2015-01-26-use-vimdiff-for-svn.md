@@ -3,7 +3,7 @@ layout: post
 title: 使用 vimdiff 代替 svn diff
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-01-26 21:42:51+0800
-orig_link: https://xwenliang.cn/p/54c640f0c8dd347c0500000a
+sync_link: https://xwenliang.cn/p/54c640f0c8dd347c0500000a
 categories: backend
 # permalink: /xxx/
 

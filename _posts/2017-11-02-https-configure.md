@@ -3,6 +3,7 @@ layout: post
 title: 开启 https 小记
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2017-11-02 19:39:13+0800
+sync_link: https://xwenliang.cn/p/59fb03e1fc6a14914c000001
 categories: backend
 # permalink: /xxx/
 

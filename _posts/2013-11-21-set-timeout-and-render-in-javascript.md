@@ -3,7 +3,7 @@ layout: post
 title: JS 中的延迟执行与 GUI 渲染
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2013-11-21 15:41:33+0800
-orig_link: https://xwenliang.cn/p/528d9d24c5b0480536000006
+sync_link: https://xwenliang.cn/p/528d9d24c5b0480536000006
 categories: frontend
 # permalink: /xxx/
 

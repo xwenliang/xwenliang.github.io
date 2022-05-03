@@ -3,6 +3,7 @@ layout: post
 title: Node.js 中的流式下载解压与流式压缩上传
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2019-10-14 21:53:12+0800
+sync_link: https://xwenliang.cn/p/5da42364978e632343000008
 categories: backend
 # permalink: /xxx/
 
@@ -15,14 +16,16 @@ categories: backend
 
 后来觉得先写个文件到磁盘，再 解压/上传 这个文件有点傻，因为 解压/上传 完毕还要再删掉它，并且即使捕获了程序异常退出、上传失败、网络不通等等异常还是会因为一些原因删不掉，比如突然断电、程序异常崩溃等  
 
-倒是有个猥琐的手段，写到一个不容易察觉的位置以.开头命名（所以你用户根目录里的.temp文件都是这么来的🤭）  
+倒是有个猥琐的手段，写到一个不容易察觉的位置以.开头命名（所以你用户根目录里的 .temp 文件都是这么来的🤭）  
 
 ---
 
-**流式处理**下载解压是门学问，首先格式要支持流式处理，什么？难道还有文件不支持流式处理吗？是的，zip 就是其中之一，根据 [wikipedia - Zip(file formate)](https://en.wikipedia.org/wiki/Zip_(file_format)) 对 zip 的解释：
+**流式处理**下载解压是门学问，首先格式要支持流式处理，什么？难道还有文件不支持流式处理吗？是的，zip 就是其中之一，根据 [wikipedia - Zip(file formate)](https://en.wikipedia.org/wiki/Zip_(file_format)) 对 zip 的解释：  
+
 > A ZIP file is correctly identified by the presence of an end of central directory record which is located at the end of the archive structure in order to allow the easy appending of new files.  
 
-zip 中包含文件目录结构的关键信息位于文件的尾部，以便于方便的添加新文件(为什么方便呢？)，所以在你拿到这个关键目录信息之前，你是无法知道它的文件内容的，所以 [yauzl](https://www.npmjs.com/package/yauzl) (一个解压 zip 的基础库，截止目前周下载量400万+ ) 的作者在[文档中吐槽](https://github.com/thejoshwolfe/yauzl#no-streaming-unzip-api)：     
+zip 中包含文件目录结构的关键信息位于文件的尾部，以便于方便的添加新文件(为什么方便呢？)，所以在你拿到这个关键目录信息之前，你是无法知道它的文件内容的，所以 [yauzl](https://www.npmjs.com/package/yauzl) (一个解压 zip 的基础库，截止目前周下载量400万+ ) 的作者在[文档中吐槽](https://github.com/thejoshwolfe/yauzl#no-streaming-unzip-api)：  
+
 > #### No Streaming Unzip API
 >
 > Due to the design of the .zip file format, it's impossible to interpret a .zip file from start to finish (such as from a readable stream) without sacrificing correctness. The Central Directory, which is the authority on the contents of the .zip file, is at the end of a .zip file, not the beginning. A streaming API would need to either buffer the entire .zip file to get to the Central Directory before interpreting anything (defeating the purpose of a streaming interface), or rely on the Local File Headers which are interspersed through the .zip file. However, the Local File Headers are explicitly denounced in the spec as being unreliable copies of the Central Directory, so trusting them would be a violation of the spec.
@@ -101,6 +104,7 @@ function downloadTgzStream(url, outputRepo, useMemory=false){
 ---
 
 **流式处理**压缩上传可以先看这篇文章：[buffer 上传中遇到的问题](https://xwenliang.github.io/backend/2019/08/13/upload-a-buffer.html)，然后我们只要流式创建 buffer 即可实现流式压缩上传：  
+
 ```javascript
 // 简单代码，未做任何异常捕获和处理
 const path = require('path');

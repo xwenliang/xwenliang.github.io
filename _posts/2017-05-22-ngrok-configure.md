@@ -3,6 +3,7 @@ layout: post
 title: 搭建 ngrok 实现内网穿透
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2017-05-22 20:39:46+0800
+sync_link: https://xwenliang.cn/p/5922dc12d9d219d608000002
 categories: backend
 # permalink: /xxx/
 

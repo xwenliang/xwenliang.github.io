@@ -3,6 +3,7 @@ layout: post
 title: 各种改版
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2022-03-31 03:25:41+0800
+sync_link: https://xwenliang.cn/p/6244aeb5efe30b79b510be3d
 categories: frontend
 # permalink: /xxx/
 

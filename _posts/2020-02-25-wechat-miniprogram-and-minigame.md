@@ -3,6 +3,7 @@ layout: post
 title: 微信小程序与微信小游戏
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2020-02-25 01:43:36+0800
+sync_link: https://xwenliang.cn/p/5e4ebc88316d6c5476000001
 categories: frontend
 # permalink: /xxx/
 

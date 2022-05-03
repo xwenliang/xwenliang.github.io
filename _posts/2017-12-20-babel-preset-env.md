@@ -3,6 +3,7 @@ layout: post
 title: babel-preset-env 前端狗的又一个福音
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2017-12-20 20:28:44+0800
+sync_link: https://xwenliang.cn/p/5a3a410b9a06a7542c000002
 categories: frontend
 # permalink: /xxx/
 

@@ -3,6 +3,7 @@ layout: post
 title: React Native TextInput 标签左右对齐的坑
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2016-05-06 19:48:47+0800
+sync_link: https://xwenliang.cn/p/572c849f866ef7873c000041
 categories: frontend
 # permalink: /xxx/
 

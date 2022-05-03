@@ -3,6 +3,7 @@ layout: post
 title: iOS 平台 native 调用 React Native functions
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-12-09 18:28:45+0800
+sync_link: https://xwenliang.cn/p/5668025db50815352000000a
 categories: frontend
 # permalink: /xxx/
 

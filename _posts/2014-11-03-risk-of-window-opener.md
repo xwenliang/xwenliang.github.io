@@ -3,7 +3,7 @@ layout: post
 title: window.opener 带来的隐患
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2014-11-03 18:12:53+0800
-orig_link: https://xwenliang.cn/p/5457012137c357d37f000001
+sync_link: https://xwenliang.cn/p/5457012137c357d37f000001
 categories: frontend
 # permalink: /xxx/
 

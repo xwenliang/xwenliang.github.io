@@ -3,7 +3,7 @@ layout: post
 title: margin-top 折叠
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2014-08-22 12:13:36+0800
-orig_link: https://xwenliang.cn/p/53f6c2d8058363192b000001
+sync_link: https://xwenliang.cn/p/53f6c2d8058363192b000001
 categories: frontend
 # permalink: /xxx/
 

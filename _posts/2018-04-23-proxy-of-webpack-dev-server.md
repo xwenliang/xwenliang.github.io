@@ -3,6 +3,7 @@ layout: post
 title: 再谈 webpack-dev-server 之 proxy
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2018-04-23 17:26:25+0800
+sync_link: https://xwenliang.cn/p/5add9a8a9e10d5d73c000001
 categories: frontend
 # permalink: /xxx/
 

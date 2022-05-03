@@ -3,6 +3,7 @@ layout: post
 title: 做个 chrome 插件吧
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2016-03-07 18:26:02+0800
+sync_link: https://xwenliang.cn/p/56d9e498866ef7873c000027
 categories: frontend
 # permalink: /xxx/
 

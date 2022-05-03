@@ -3,6 +3,7 @@ layout: post
 title: 对 peerDependencies 的理解
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2018-05-09 16:02:03+0800
+sync_link: https://xwenliang.cn/p/5af2a97d5a8a996548000003
 categories: backend
 # permalink: /xxx/
 

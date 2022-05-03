@@ -3,6 +3,7 @@ layout: post
 title: React Native iOS 环境部署时遇到的坑
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-11-05 18:55:52+0800
+sync_link: https://xwenliang.cn/p/563b35b84b140eed50000004
 categories: frontend
 # permalink: /xxx/
 

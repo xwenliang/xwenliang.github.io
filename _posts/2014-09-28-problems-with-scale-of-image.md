@@ -3,7 +3,7 @@ layout: post
 title: 图片放大抖动的内在原因及解决方法
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2014-09-28 14:10:38+0800
-orig_link: https://xwenliang.cn/p/542251406ef62a8001000002
+sync_link: https://xwenliang.cn/p/542251406ef62a8001000002
 categories: frontend
 # permalink: /xxx/
 

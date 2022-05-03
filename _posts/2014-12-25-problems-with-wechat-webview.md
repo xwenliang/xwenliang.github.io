@@ -3,7 +3,7 @@ layout: post
 title: 微信页面开发中遇到的坑
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2014-12-25 15:51:43+0800
-orig_link: https://xwenliang.cn/p/549bc1d96c1351e664000001
+sync_link: https://xwenliang.cn/p/549bc1d96c1351e664000001
 categories: frontend
 # permalink: /xxx/
 

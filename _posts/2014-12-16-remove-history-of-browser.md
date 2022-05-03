@@ -3,7 +3,7 @@ layout: post
 title: 如何干掉浏览器历史记录
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2014-12-16 11:42:11+0800
-orig_link: https://xwenliang.cn/p/548faa0ad6a065da2a000003
+sync_link: https://xwenliang.cn/p/548faa0ad6a065da2a000003
 categories: frontend
 # permalink: /xxx/
 

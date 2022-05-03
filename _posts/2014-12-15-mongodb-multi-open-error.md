@@ -3,7 +3,7 @@ layout: post
 title: 解决 mongodb 多次 open 报错
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2014-12-15 18:54:23+0800
-orig_link: https://xwenliang.cn/p/548aae4aea5f23ed64000001
+sync_link: https://xwenliang.cn/p/548aae4aea5f23ed64000001
 categories: backend
 # permalink: /xxx/
 

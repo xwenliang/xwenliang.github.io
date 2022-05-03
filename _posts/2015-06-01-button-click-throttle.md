@@ -3,7 +3,7 @@ layout: post
 title: 按钮连点 & 重复提交
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-06-01 15:32:30+0800
-orig_link: https://xwenliang.cn/p/53159691822d0f3550695310
+sync_link: https://xwenliang.cn/p/53159691822d0f3550695310
 categories: frontend
 # permalink: /xxx/
 

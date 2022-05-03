@@ -3,7 +3,8 @@ layout: post
 title: 监听 CSS position:sticky 的事件
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2022-01-30 16:08:48+0800
-# 原文发表时间
+sync_link: https://xwenliang.cn/p/61f64760e716903a1f000001
+# 原文发表时间 和 原文链接
 orig_date: 2017-09-19
 orig_link: https://developers.google.com/web/updates/2017/09/sticky-headers
 categories: translation

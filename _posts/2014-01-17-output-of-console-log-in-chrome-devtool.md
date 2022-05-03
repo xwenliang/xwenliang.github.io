@@ -3,7 +3,7 @@ layout: post
 title: chrome 控制台的 console.log 输出有时候很坑爹
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2014-01-17 12:21:40+0800
-orig_link: https://xwenliang.cn/p/52cbc87014e98b7623000011
+sync_link: https://xwenliang.cn/p/52cbc87014e98b7623000011
 categories: frontend
 # permalink: /xxx/
 

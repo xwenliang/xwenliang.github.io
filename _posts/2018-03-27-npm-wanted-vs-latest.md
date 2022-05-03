@@ -3,6 +3,7 @@ layout: post
 title: npm Wanted vs Latest
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2018-03-27 12:07:38+0800
+sync_link: https://xwenliang.cn/p/5ab9c38a46dc6a1506000002
 categories: backend
 # permalink: /xxx/
 

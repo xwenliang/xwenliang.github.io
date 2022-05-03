@@ -3,6 +3,7 @@ layout: post
 title: http 请求被 307 到 https
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2018-11-10 21:51:49+0800
+sync_link: https://xwenliang.cn/p/5be6e275469f887b71000001
 categories: frontend
 # permalink: /xxx/
 
@@ -16,6 +17,7 @@ categories: frontend
 2. 再访问 `http://a.com`, 该网页 JS 会请求 `http://api.a.com`, 但是查看网络请求发现，`http://api.a.com` 被强制 `307` 到了 `https://api.a.com`  
 
 经过排查发现，这是命中了浏览器的 [HSTS](https://www.chromium.org/hsts/) 策略，即：  
+
 > 一切能通过 https 访问的网址，都用 https 来访问  
 
 「能通过 https 访问的网址」怎么定义呢？那就是你曾经访问过该网址的 https 链接(当然可以通过清除浏览器历史记录来骗过浏览器，但你的用户可能不知道这个操作)  

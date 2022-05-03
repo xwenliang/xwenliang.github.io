@@ -3,7 +3,7 @@ layout: post
 title: Javascript 中对象的有序无序问题
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2014-02-24 11:35:25+0800
-orig_link: https://xwenliang.cn/p/52cbc7e114e98b7623000010
+sync_link: https://xwenliang.cn/p/52cbc7e114e98b7623000010
 categories: frontend
 # permalink: /xxx/
 

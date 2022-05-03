@@ -3,6 +3,7 @@ layout: post
 title: javascript 中的冒号
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2017-12-12 19:29:56+0800
+sync_link: https://xwenliang.cn/p/5a2fbdb45488a2d34c000002
 categories: frontend
 # permalink: /xxx/
 

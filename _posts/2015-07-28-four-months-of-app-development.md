@@ -3,7 +3,7 @@ layout: post
 title: APP 开发的这四个月
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-07-28 14:32:25+0800
-orig_link: https://xwenliang.cn/p/55acdd573c64f42b6a000001
+sync_link: https://xwenliang.cn/p/55acdd573c64f42b6a000001
 categories: frontend
 # permalink: /xxx/
 

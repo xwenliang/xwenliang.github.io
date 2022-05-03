@@ -3,7 +3,7 @@ layout: post
 title: 浅析 Session 和 Cookie
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2013-11-28 11:36:04+0800
-orig_link: https://xwenliang.cn/p/5296ba24bb1eabe047000001
+sync_link: https://xwenliang.cn/p/5296ba24bb1eabe047000001
 categories: backend
 # permalink: /xxx/
 

@@ -3,6 +3,7 @@ layout: post
 title: React 服务端渲染
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2018-03-06 12:10:52+0800
+sync_link: https://xwenliang.cn/p/5a9e145309d7cf117a000001
 categories: backend
 # permalink: /xxx/
 

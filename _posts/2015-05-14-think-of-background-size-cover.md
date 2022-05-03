@@ -3,7 +3,7 @@ layout: post
 title: background-size:cover 引发的思考
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-05-14 18:15:56+0800
-orig_link: https://xwenliang.cn/p/552a0f91a09127430f000001
+sync_link: https://xwenliang.cn/p/552a0f91a09127430f000001
 categories: frontend
 # permalink: /xxx/
 

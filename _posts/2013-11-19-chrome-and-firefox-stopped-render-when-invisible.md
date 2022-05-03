@@ -3,7 +3,7 @@ layout: post
 title: 关于 Chrome/Firefox 最小化后停止 GUI 渲染的问题
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2013-11-19 12:05:47+0800
-orig_link: https://xwenliang.cn/p/5288c8e7e8ce32583f000003
+sync_link: https://xwenliang.cn/p/5288c8e7e8ce32583f000003
 categories: frontend
 # permalink: /xxx/
 

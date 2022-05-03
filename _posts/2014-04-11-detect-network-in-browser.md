@@ -3,7 +3,7 @@ layout: post
 title: web 端如何检测设备是否连接外网
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2014-04-11 16:03:32+0800
-orig_link: https://xwenliang.cn/p/5347a0527598534e5080ce47
+sync_link: https://xwenliang.cn/p/5347a0527598534e5080ce47
 categories: frontend
 # permalink: /xxx/
 

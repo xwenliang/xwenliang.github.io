@@ -3,7 +3,7 @@ layout: post
 title: 使用 WebStorm 调试 Nodejs
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-07-29 12:27:45+0800
-orig_link: https://xwenliang.cn/p/55b856418bd2df980a000001
+sync_link: https://xwenliang.cn/p/55b856418bd2df980a000001
 categories: backend
 # permalink: /xxx/
 

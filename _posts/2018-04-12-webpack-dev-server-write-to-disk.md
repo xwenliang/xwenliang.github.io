@@ -3,6 +3,7 @@ layout: post
 title: webpack-dev-server 编译文件写入磁盘
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2018-04-12 18:41:40+0800
+sync_link: https://xwenliang.cn/p/5acf36bef4c855403a000002
 categories: frontend
 # permalink: /xxx/
 

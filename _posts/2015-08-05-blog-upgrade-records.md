@@ -3,7 +3,7 @@ layout: post
 title: 博客升级日记
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-08-05 03:00:49+0800
-orig_link: https://xwenliang.cn/p/55b1e2402d1e396e4e000001
+sync_link: https://xwenliang.cn/p/55b1e2402d1e396e4e000001
 categories: frontend
 # permalink: /xxx/
 

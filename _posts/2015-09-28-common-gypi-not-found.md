@@ -3,6 +3,7 @@ layout: post
 title: 解决 common.gypi not found
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-09-28 19:45:45+0800
+sync_link: https://xwenliang.cn/p/56092869e679ea9102000001
 categories: backend
 # permalink: /xxx/
 

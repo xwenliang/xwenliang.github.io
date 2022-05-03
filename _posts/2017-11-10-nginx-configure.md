@@ -3,6 +3,7 @@ layout: post
 title: nginx 配置小结
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2017-11-10 17:28:48+0800
+sync_link: https://xwenliang.cn/p/5a05715014c84b094f000001
 categories: backend
 # permalink: /xxx/
 

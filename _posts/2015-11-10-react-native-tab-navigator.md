@@ -3,6 +3,7 @@ layout: post
 title: react-native-tab-navigator 引发的血案
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-11-10 18:43:16+0800
+sync_link: https://xwenliang.cn/p/563b34af4b140eed50000003
 categories: frontend
 # permalink: /xxx/
 

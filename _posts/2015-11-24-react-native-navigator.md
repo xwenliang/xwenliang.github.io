@@ -3,6 +3,7 @@ layout: post
 title: React Native Navigator 小结
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-11-24 17:59:13+0800
+sync_link: https://xwenliang.cn/p/565434f14b140eed5000000c
 categories: frontend
 # permalink: /xxx/
 

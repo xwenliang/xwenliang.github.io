@@ -3,6 +3,7 @@ layout: post
 title: 单页面 web 应用避免白屏
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2017-03-11 12:51:18+0800
+sync_link: https://xwenliang.cn/p/58c38246c088f2da3700000b
 categories: frontend
 # permalink: /xxx/
 

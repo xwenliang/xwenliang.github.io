@@ -3,6 +3,7 @@ layout: post
 title: 腾讯云 centos7 安装 gitlab 及数据迁移
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2018-03-14 18:59:16+0800
+sync_link: https://xwenliang.cn/p/5aa9003a59c7704f42000001
 categories: backend
 # permalink: /xxx/
 

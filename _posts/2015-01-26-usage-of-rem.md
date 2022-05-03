@@ -3,7 +3,7 @@ layout: post
 title: rem — 前端狗的福音
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-01-26 03:03:52+0800
-orig_link: https://xwenliang.cn/p/54c222aec8dd347c05000008
+sync_link: https://xwenliang.cn/p/54c222aec8dd347c05000008
 categories: frontend
 # permalink: /xxx/
 

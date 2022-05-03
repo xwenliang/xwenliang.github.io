@@ -3,7 +3,7 @@ layout: post
 title: 使用 Nodejs 的 socket 制作聊天室遇到的问题总结
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2013-12-03 15:53:58+0800
-orig_link: https://xwenliang.cn/p/528f48cede7808945b000002
+sync_link: https://xwenliang.cn/p/528f48cede7808945b000002
 categories: backend
 # permalink: /xxx/
 

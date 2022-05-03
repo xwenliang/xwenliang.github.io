@@ -3,6 +3,7 @@ layout: post
 title: 解决滚动条引起的页面抖动
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-08-11 23:32:26+0800
+sync_link: https://xwenliang.cn/p/55ca158a7fb6a81220000002
 categories: frontend
 # permalink: /xxx/
 

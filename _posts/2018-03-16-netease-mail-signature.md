@@ -3,6 +3,7 @@ layout: post
 title: 编辑网易邮箱签名的奇幻之旅
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2018-03-16 19:26:38+0800
+sync_link: https://xwenliang.cn/p/5aaba9ee59c7704f42000008
 categories: frontend
 # permalink: /xxx/
 

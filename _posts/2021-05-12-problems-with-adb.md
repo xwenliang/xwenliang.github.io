@@ -3,7 +3,7 @@ layout: post
 title: adb 不能连接
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2021-05-12 11:27:32+0800
-orig_link: https://xwenliang.cn/p/609b49e7d2360b4e14000002
+sync_link: https://xwenliang.cn/p/609b49e7d2360b4e14000002
 categories: frontend
 # permalink: /xxx/
 

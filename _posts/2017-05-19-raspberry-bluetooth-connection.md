@@ -3,7 +3,7 @@ layout: post
 title: 树莓派 raspberry 连接蓝牙音箱播放音乐的小折腾
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2017-05-19 11:26:28+0800
-orig_link: https://xwenliang.cn/p/57ea7ef7866ef7873c000060
+sync_link: https://xwenliang.cn/p/57ea7ef7866ef7873c000060
 categories: backend
 # permalink: /xxx/
 

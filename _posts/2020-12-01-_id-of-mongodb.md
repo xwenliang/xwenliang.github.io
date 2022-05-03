@@ -3,6 +3,7 @@ layout: post
 title: MongoDB 自带的 _id 会不会重复
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2020-12-01 23:32:28+0800
+sync_link: https://xwenliang.cn/p/5fc6620c4d4385905c000001
 categories: backend
 # permalink: /xxx/
 

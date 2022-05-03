@@ -3,7 +3,7 @@ layout: post
 title: 当 FastClick 遇上 iScroll5
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-03-12 19:34:38+0800
-orig_link: https://xwenliang.cn/p/550179ce043d254915000001
+sync_link: https://xwenliang.cn/p/550179ce043d254915000001
 categories: frontend
 # permalink: /xxx/
 

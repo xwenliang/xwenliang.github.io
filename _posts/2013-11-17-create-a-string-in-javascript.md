@@ -3,7 +3,7 @@ layout: post
 title: Javascript 两种创建字符串方式的区别
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2013-11-17 21:15:55+0800
-orig_link: https://xwenliang.cn/p/5288c18be8ce32583f000002
+sync_link: https://xwenliang.cn/p/5288c18be8ce32583f000002
 categories: frontend
 # permalink: /xxx/
 

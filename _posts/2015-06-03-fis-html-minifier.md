@@ -3,7 +3,7 @@ layout: post
 title: fis 对 html 文件的压缩
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-06-03 14:57:10+0800
-orig_link: https://xwenliang.cn/p/556e9a58e38f7b2966000001
+sync_link: https://xwenliang.cn/p/556e9a58e38f7b2966000001
 categories: frontend
 # permalink: /xxx/
 

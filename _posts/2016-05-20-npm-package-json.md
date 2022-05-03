@@ -3,6 +3,7 @@ layout: post
 title: npm 的又一记坑
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2016-05-20 13:41:30+0800
+sync_link: https://xwenliang.cn/p/573ea374866ef7873c000047
 categories: backend
 # permalink: /xxx/
 

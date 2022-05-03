@@ -3,7 +3,7 @@ layout: post
 title: 喷一喷 box-flex
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2015-02-26 18:30:36+0800
-orig_link: https://xwenliang.cn/p/54da0f5f861bdd1d5e000002
+sync_link: https://xwenliang.cn/p/54da0f5f861bdd1d5e000002
 categories: frontend
 # permalink: /xxx/
 

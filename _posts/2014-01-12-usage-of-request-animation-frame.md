@@ -3,7 +3,7 @@ layout: post
 title: 尝试使用 requestAnimationFrame 来解决之前提到的 GUI 渲染问题
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2014-01-12 01:38:02+0800
-orig_link: https://xwenliang.cn/p/52cbc9ba14e98b7623000012
+sync_link: https://xwenliang.cn/p/52cbc9ba14e98b7623000012
 categories: frontend
 # permalink: /xxx/
 

@@ -3,7 +3,7 @@ layout: post
 title: 移动设备横竖屏之终极解决方案
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2014-07-09 15:17:45+0800
-orig_link: https://xwenliang.cn/p/53951e924093e67742000001
+sync_link: https://xwenliang.cn/p/53951e924093e67742000001
 categories: frontend
 # permalink: /xxx/
 

@@ -3,7 +3,7 @@ layout: post
 title: transform:translate3d 开启硬件加速？请慎用！
 # date 同时用作关联 github issue 的唯一标识，所以不可重复
 date: 2014-10-24 17:01:19+0800
-orig_link: https://xwenliang.cn/p/5406909e058363192b00022d
+sync_link: https://xwenliang.cn/p/5406909e058363192b00022d
 categories: frontend
 # permalink: /xxx/
 
