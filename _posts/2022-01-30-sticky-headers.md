@@ -6,7 +6,7 @@ date: 2022-01-30 16:08:48+0800
 sync_link: https://xwenliang.cn/p/61f64760e716903a1f000001
 # 原文发表时间 和 原文链接
 orig_date: 2017-09-19
-orig_link: https://developers.google.com/web/updates/2017/09/sticky-headers
+orig_link: https://developer.chrome.com/blog/sticky-headers/
 categories: translation
 # permalink: /xxx/
 
@@ -275,7 +275,5 @@ function fireEvent(stuck, target) {
 未来或许一个名为 "Style Mutation Observer" 的监听器可以监听到元素计算样式的改变，像 `position:sticky`.  
 
 
-> 翻译自：https://developers.google.com/web/updates/2017/09/sticky-headers
-
-
+> 翻译自：https://developer.chrome.com/blog/sticky-headers/  
 
