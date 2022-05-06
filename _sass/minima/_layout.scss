@@ -446,15 +446,17 @@
  * <div class="iframe-youtube"><iframe loading="lazy" src="https://www.youtube.com/embed/65VMej8n23A"></iframe></div>
  */
 .iframe-youtube{
-  padding-top: 56.25%;
-  width: 100%;
   position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-top: 56.25%;
   iframe{
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    border: none;
   }
 }
