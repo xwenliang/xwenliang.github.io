@@ -11,7 +11,7 @@ categories: frontend
 # name of this file show be in format of: YEAR-MONTH-DAY-title.MARKUP
 ---
 
-最近有小伙伴花了大几千买了某视频网课的课程，快到期了还没看过，问我能不能下载到本地  
+#### 最近有小伙伴花了大几千买了某视频网课的课程，快到期了还没看过，问我能不能下载到本地  
 
 先去 github 逛了一圈，发现有个叫做 CocoCut 的浏览器插件，可以下载视频，对于加密视频，只要能播放就能下载  
 
@@ -31,19 +31,19 @@ categories: frontend
 
 
 
-既然它能做，那么咱们应该也可以。先了解下目前市面上常见的视频加密手段：  
+#### 既然它能做，那么咱们应该也可以。先了解下目前市面上常见的视频加密手段：  
 
 1. 微软 DRM SDK, 浏览器兼容较差  
 
-  ![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-07-15-a4bb0b5823.jpg)  
+    ![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-07-15-a4bb0b5823.jpg)  
 
 2. RTMPE, Adobe 提出的产生于 FLASH 时代的视频加密传输协议。流媒体服务器软件价格贵，数据不能缓存，用户每次播放都要占用服务器带宽  
 
 3. HLS, Apple 提出的基于 http 协议的视频分片传输协议, PC Chrome 不支持，需要使用 Media Source Extensions 转码播放(西瓜播放器、jwplayer)  
 
-  ![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-07-15-41ec81e858.jpg)  
+    ![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-07-15-41ec81e858.jpg)  
 
-  ![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-07-15-f77b775498.jpg)  
+    ![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-07-15-f77b775498.jpg)  
 
 HLS 由两部分构成，一个是 .m3u8 文件，一个是 .ts 视频文件（TS 是视频文件格式的一种）。整个过程是，浏览器会首先去请求 .m3u8 的索引文件，然后解析 m3u8，找出对应的 .ts 文件链接，并开始下载  
 
@@ -64,7 +64,7 @@ HLS 原生支持客户端加密，只需要往 .m3u8 文件中添加 EXT-X-KEY �
 
 
 
-行业方案 —— 保利威视基于 HLS 的视频加密方案  
+#### 行业方案 —— 保利威视基于 HLS 的视频加密方案  
 
 v11: m3u8+AES 和上述方案类似  
 
@@ -200,7 +200,7 @@ function stopRecorder(recorder){
 
 
 
-遇到的几个问题：  
+#### 遇到的几个问题：  
 
 1. 很多视频网站播放完后会刷新页面到下一个播放页面，导致 `content.js` 中对 `video` 标签的 `end` `complete` 事件的监听函数中的动作不能保证成功，同样页面的 `beforeunload` `unload` 事件监听函数中的动作也不能保证成功，所以我们把视频流发送到浏览器插件的 `background` 进行处理  
 
@@ -250,15 +250,15 @@ manifest.json 加上 `"content_security_policy": "script-src 'self' 'unsafe-eval
 
 
 
-攻防设想
+#### 攻防设想  
 
-#### 假如我不想被别人利用这个手段下载到我的视频怎么办？  
+**假如我不想被别人利用这个手段下载到我的视频怎么办？**  
 
 既然是用了 `HTMLMediaElement.captureStream()` 这个 API, 那我能不能屏蔽它呢？答案是可以的：  
 
 ![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-07-15-9b983eed58.jpg)  
 
-#### 假如别人用了这个手段屏蔽了 API, 但我还是想下载怎么办？  
+**假如别人用了这个手段屏蔽了 API, 但我还是想下载怎么办？**  
 
 相信有很多种办法可以做到，这里我尝试了 cloneNode:  
 
@@ -266,7 +266,7 @@ manifest.json 加上 `"content_security_policy": "script-src 'self' 'unsafe-eval
 
 当然可以继续屏蔽 `HTMLElement.prototype.cloneNode`, 我们还可以使用 `outerHTML`  
 
-#### 如果 MediaRecorder 被屏蔽了呢  
+**如果 MediaRecorder 被屏蔽了呢**  
 
 我们可以在页面加载前就注入代码，提前保存该 API  
 
@@ -275,7 +275,7 @@ manifest.json 加上 `"content_security_policy": "script-src 'self' 'unsafe-eval
 
 
 
-TODO:  
+#### TODO:  
 
 1. 同个页面多个 video 处理  
 2. 视频暂停时要暂停录制  
