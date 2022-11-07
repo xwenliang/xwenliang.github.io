@@ -16,7 +16,7 @@ categories: frontend
 
 由于我们的需求场景主要在微信平台，所以重点使用了其编译至 H5 端和小游戏端，在试用了微信的官方案例 - [tutorial-blackjack](https://github.com/cocos-creator/tutorial-blackjack) 后，感觉在微信小游戏端的体验确实很不错，并且同样的代码无需任何更改即可编译至微信小游戏和 H5 端双平台，唯一遗憾的是目前最新的版本 `v2.3.0` 仍不能编译至微信小程序，官方明确回复了应该[不会予以支持](https://forum.cocos.org/t/cocos/39940/7)，并且存在[以下问题](https://forum.cocos.org/t/topic/41002/6)：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-4-18-9aefd5895d.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-18-9aefd5895d.jpg)  
 
 这都是2016年11月份的老帖子了，时至今日微信小程序也有了诸多更新，比如  `globalAlpha` 的支持、 `WebGL`的支持(2.7.0) 、 `drawImage` 已经从原来的5个参数更新为标准的9个参数，且参数功能也和标准一致等等。
 
@@ -40,7 +40,7 @@ categories: frontend
 
 然后就是真机调试的时候各种莫名其妙的报错，搜索了官方论坛才知道，原来 [canvas2d 和 webgl 暂不支持真机调试，请直接使用真机预览](https://developers.weixin.qq.com/community/develop/doc/00044ee36e04601f236971e5c50000)，那么问题来了，真机预览还怎么调试呢，好在还有个 vconsole 能用，但是让我们看一下它的报错信息：  
 
-![mini-game-error](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-4-18-2cf66f2f83.jpg)  
+![mini-game-error]({{ site.gallery_prefix }}2022-04-18-2cf66f2f83.jpg)  
 
 你能看出来这是因为小程序缺少小游戏的 `Audio` 类而报的错吗...
 

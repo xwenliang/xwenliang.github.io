@@ -28,7 +28,7 @@ categories: frontend
 
 为什么会小 0.3px 呢？难道 Zepto 做了什么处理吗？翻阅其源码后发现：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-29-47608b447b.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-29-47608b447b.jpg)  
 
 尼玛啊，Zepto 你要不要如此坑爹。。。  
 
@@ -38,13 +38,13 @@ categories: frontend
 
 看下图：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-29-4d3b9d36fe.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-29-4d3b9d36fe.jpg)  
 
 简直毁三观啊。。。估计这时候浏览器会说：臣妾做不到啊。。。  
 这也难怪 Zepto 会把小数点给四舍五入掉，它的存在根本没有太大的意义啊  
 
 再看一张毁三观的图：  
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-29-0b89535bbe.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-29-0b89535bbe.jpg)  
 
 分三种方法查看该元素的宽度，居然得到三种不同的答案，浏览器你的节操呢😂  
 

@@ -20,11 +20,11 @@ categories: frontend
 
 去看 html-minifier 的官方文档，会发现它其实是支持压缩页面中的 css 和 js 的，只不过默认是不开启状态：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-30-62e210db3b.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-30-62e210db3b.jpg)  
 
 再去看 fis 中依赖的 fis-postpackager-html-minifier 模块，确实没有开启 minifyCSS 和 minifyJS 这两项配置：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-30-782bcd1317.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-30-782bcd1317.jpg)  
 
 那么到这里问题已经解决，直接在 fis 依赖的这个模块中添加开启这两项配置即可。  
 

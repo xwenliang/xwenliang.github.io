@@ -35,5 +35,5 @@ $DIFF $LEFT $RIGHT
 
 效果：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-30-f708b1537e.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-30-f708b1537e.jpg)  
 

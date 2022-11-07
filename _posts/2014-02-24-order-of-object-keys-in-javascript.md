@@ -18,17 +18,17 @@ categories: frontend
 
 吓！？果然是有序的吗...有点不甘心，一口气写了几十个，a-z 写完了，发现依然是按先后次序输出的...不仅如此，后插入的，也会最后输出：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-05-02-90505b94fe.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-05-02-90505b94fe.jpg)  
 
 有点崩溃了，转而求助于 python:  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-05-02-c34531b7b6.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-05-02-c34531b7b6.jpg)  
 
 发现，我大 python 还是很有节操的没有按序输出...  
 
 但是上面的结果能够说明 js 中对象是有序的吗？我们只用了字母作为 key, 是不是有点特殊呢？何不再来几发更特殊的呢，比如数字啥的：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-05-02-26ae9ab381.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-05-02-26ae9ab381.jpg)  
 
 这结果，真是劲爆啊，输出顺序竟然是 **数字 > * > 字母**，并且数字还会按照大小顺序升序排序，但是字母却不排序...  
 

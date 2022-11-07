@@ -20,9 +20,9 @@ categories: backend
 
 查看发行历史，发现官方提供的[下载列表](https://packages.gitlab.com/gitlab/gitlab-ce)中最早是发布于 6 年前的 [gitlab-ce_7.10.0](https://packages.gitlab.com/gitlab/gitlab-ce/packages/ubuntu/precise/gitlab-ce_7.10.0~omnibus-1_amd64.deb), 然后找到 7 系列的最后一个版本 gitlab-ce_7.14.3 一起下载了下来，开始尝试安装这两个版本，如果内存占用差不多的话那肯定选择后者，经过了中间的迭代应该是修复了不少问题。两个版本安装后的截图如下：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-4-6-6d6680abd4.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-06-6d6680abd4.jpg)  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-4-6-e19d76529a.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-06-e19d76529a.jpg)  
 
 可以看到内存占用是差不多的，并且新版本的 logo 也相较之前发生了改变，整体的布局也更顺眼一些，所以 gitlab-ce_7.14.3 应该是我的目标版本。  
 
@@ -62,7 +62,7 @@ categories: backend
 
 界面截图：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-4-6-93d1f7b50b.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-06-93d1f7b50b.jpg)  
 
 ---
 
@@ -92,7 +92,7 @@ categories: backend
 
 界面截图：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-4-6-a145a4c788.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-06-a145a4c788.jpg)  
 
 ---  
 

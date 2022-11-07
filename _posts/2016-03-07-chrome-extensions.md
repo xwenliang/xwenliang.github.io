@@ -42,7 +42,7 @@ categories: frontend
 
 我大 google 发布浏览器插件要付个一次性的 $5, 等我的 visa 双币卡下来了再发布到应用商店吧...  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-27-10ba78cf0b.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-27-10ba78cf0b.jpg)  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-27-378f1e7f34.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-27-378f1e7f34.jpg)  
 

@@ -14,7 +14,7 @@ categories: backend
 
 用过 mongodb 的同学们可能都遇到过，mongodb 在 open 之后没来的及 close, 再进行一次 open 操作将会导致报错，整个 nodejs 进程都死掉了。如下图：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-30-21dff08e39.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-30-21dff08e39.jpg)  
 
 解决方法大致有以下几种：  
 

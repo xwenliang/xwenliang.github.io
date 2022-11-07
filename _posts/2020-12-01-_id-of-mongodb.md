@@ -30,7 +30,7 @@ categories: backend
 > 3. a 2-byte process id, and
 > 4. a 3-byte counter, starting with a random value.
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-4-13-2d2b5de15b.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-13-2d2b5de15b.jpg)  
 
 看到这里，好像并不能保证不重复，因为它只说了有个 3-byte 也就是6位16进制的自增 counter, 并且还是从一个随机值开始的，假如不幸正好随机到了最大值 `2^24=16,777,216` 附近，会不会再累加就溢出了，然后导致产生重复呢？
 

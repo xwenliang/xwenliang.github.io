@@ -14,7 +14,7 @@ categories: frontend
 
 今天手抖，点了 Xcode 的更新提示，更新完后发现 APP 果然跑不起来了，报错截图：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-29-b47c5524cf.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-29-b47c5524cf.jpg)  
 
 由于目前采用的还是 webview 的方案，所以必不可少的要加载一些 web 资源，直观的看上去，是这些资源由于某些原因导致加载失败，所以 APP 白屏了。  
 

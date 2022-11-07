@@ -14,11 +14,11 @@ categories: frontend
 
 今天让这个属性坑的满地打滚，w3c 这样描述道：  
   
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-30-9aacbea8ec.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-30-9aacbea8ec.jpg)  
 
 但事实真的是这样的吗？看下图：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-30-1ecea1c21c.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-30-1ecea1c21c.jpg)  
 
 我们发现，除了左右比例根本不是说好的 1:2 之外，这个比例还会随着容器内容的多少而变化，我书读的比较少，顿时茫然了。  
 

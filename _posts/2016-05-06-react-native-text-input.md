@@ -14,13 +14,13 @@ categories: frontend
 
 相信大家经常遇到如下设计：  
   
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-27-788660ca91.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-27-788660ca91.jpg)  
   
 上图授权码处，左边一个 Text 做 label, 右边 TextInput 默认显示 placeholder 提示用户输入，web 端大家都会用 `flex(inline-block)+line-height` 来分分钟搞定它，然而到了 RN 端这个问题却好像没那么简单了：  
   
 RN 里面的 line-height 并不是 web 端的那种效果，并不能通过设置 `height=lineHeight` 来使内容居中，具体效果：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-27-b0eb556a3a.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-27-b0eb556a3a.jpg)  
 
 机智的开发者们想到了 `justifyContent: 'center'`, 然而这个属性是 View 才具有的，没关系 text 和 TextInput 一人包一个 View:  
 
@@ -67,7 +67,7 @@ let styles = StyleSheet.create({
 
 然而运行结果并不是想象中的那样：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-27-1a3ecde260.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-27-1a3ecde260.jpg)  
 
 我们发现，iOS 和 Android 都是 input 的内容会偏上一点点，针对 iOS 端的截图进一步放大然后 ps 测量发现 (mac 下截图所以是两倍)：  
 
@@ -90,11 +90,11 @@ let styles = StyleSheet.create({
 
 然后再去看看 Text 和 TextInput 本身，分别给两者设置 border:  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-27-0ddd15617d.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-27-0ddd15617d.jpg)  
 
 我们发现，好像貌似居中了呢？难道 TextInput 默认有个 border? 赶紧把手动给 TextInput 设置的 border 去掉，我们发现依然是原来的显示效果，回头想想 web 端的 input 才恍然大悟，它一定是存在一个默认的 border 的。  
 
 然后在尝试将 TextInput 的 borderWidth 设置为 0 后发现并没有任何作用，所以只好给左侧的 Text 设置一个透明 border 了，问题至此已经解决：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-27-4cf731d14b.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-27-4cf731d14b.jpg)  
 

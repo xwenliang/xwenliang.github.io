@@ -33,7 +33,7 @@ outer window 可以理解为浏览器当前上下文，它可以是一个窗口�
 
 inner window 是用户当前所看到的具体内容，下面这张图很好的说明了他们的关系：
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-19-4a5483655d.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-19-4a5483655d.jpg)  
 
 蓝色部分是一个个的 inner window, 灰色的框子是 outer window, 在有BFCache的场景里面，你可以认为浏览器只是移动了 outer window 的坐标来直接给你展示已经被 cache 起来的内容  
 

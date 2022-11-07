@@ -22,7 +22,7 @@ categories: backend
 
 如图：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-27-1c05813bfd.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-27-1c05813bfd.jpg)  
 
 从错误日志来看，其实是因为这个仓库缺少了 package.json 文件，想想也对，人家安装完后要告诉用户安装了哪些包，你没有 package.json 文件，人家怎么会知道你这个包是什么鬼呢。  
 

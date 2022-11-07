@@ -145,7 +145,7 @@ http.createServer((req, res) => {
 
 对于发送端来说没有区别，都是个 multipart/form-data, 对于接收端来说，我们还是看看实际收到的内容对比吧：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-19-1d331e163d.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-19-1d331e163d.jpg)  
 
 我们发现只是少了个 `filename="aaa.zip"`, 同时 `Content-Type` 也有一点变化，那么 multipart/form-data 的数据格式规范到底是什么样的呢？具体可以看这里：[RFC7578](https://tools.ietf.org/html/rfc7578)  
 
@@ -226,7 +226,7 @@ req.end();
 
 首先是 LF 与 CRLF 的问题，最开始我是通过字符串模板来生成的数据，在字符串模板中使用了换行格式来产生换行及空行，结果上传时总是报 parse error, 肉眼对比上传后能正常解析的内容发现也都是一样的，最后无奈使用 Beyond Compare 对比才发现了问题：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-19-282ed1e271.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-19-282ed1e271.jpg)  
 
 原来是换行符不一致导致的，类 Unix 系统中默认的换行符是 LF(\n), 而 [RFC7578](https://tools.ietf.org/html/rfc7578#section-4.1) 规范中要求的是 CRLF(\r\n), 所以才导致了解析异常  
 

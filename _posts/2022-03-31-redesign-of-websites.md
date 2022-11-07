@@ -29,7 +29,7 @@ https://developer.chrome.com/blog/sticky-headers/
 
 最后分别放一张以上两个网站改版前的截图：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-3-31-4143f5f836.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-03-31-4143f5f836.jpg)  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-3-31-9cd125889f.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-03-31-9cd125889f.jpg)  
 

@@ -23,7 +23,7 @@ categories: translation
 
 ### 背景：Cancelable Event 让你的页面变慢了  
 
-<div class="iframe-youtube"><iframe loading="lazy" src="https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-05-06-40b9eb166e.mp4"></iframe></div>  
+<div class="iframe-youtube"><iframe loading="lazy" src="{{ site.gallery_prefix }}2022-05-06-40b9eb166e.mp4"></iframe></div>  
 
 如果在 `touchstart` 或者首个 `touchmove` 事件监听器中调用了 `preventDefault()` 就会阻止页面滚动。问题是绝大部分的监听器并不会调用 `preventDefault()`, 然而浏览器仍然需要等待事件监听器执行结束来确保没有调用。"passive event listener" 就是用来解决这种场景的。当给上述两个事件监听器的第三个参数传递了 `{passive: true}` 对象，这就告诉浏览器该事件监听器中不会调用 `preventDefault()` 可以放心的滚动而不必等待事件监听器的执行。示例代码：  
 
@@ -53,7 +53,7 @@ window.addEventListener('touchstart', func, {passive: true});
 
 下面的图表展示了从用户首次触摸屏幕到屏幕更新的时间，数据来源于 Android Chrome 中的所有网站。在改进措施生效之前这个时间超过了 400ms, 而现在在 Chrome 56 Beta 中减少到了 250ms, 降低了 38%. 将来我们希望把所有的 `touchstart` 和 `touchmove` 的事件监听器都默认设置为 `{passive: true}`, 这样能把时间降低到 50ms.  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-05-07-40e55bf027.png)  
+![IMAGE]({{ site.gallery_prefix }}2022-05-07-40e55bf027.png)  
 
 ### 不兼容和修复指引  
 

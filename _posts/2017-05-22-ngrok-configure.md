@@ -97,5 +97,5 @@ server.listen(8080);
 
 启动后，从外网访问 `http://ngrok.xwenliang.cn:8081` 就会出现：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-27-f21a6a3b74.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-27-f21a6a3b74.jpg)  
 

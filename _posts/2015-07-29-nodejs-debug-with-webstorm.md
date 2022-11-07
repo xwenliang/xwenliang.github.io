@@ -18,7 +18,7 @@ categories: backend
 
 下载安装，光是这个安装界面就深深吸引了我：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-30-cf7190390f.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-30-cf7190390f.jpg)  
 
 安装后就有些摸不着头脑了，从没用 IDE 进行过开发，搜到的一些相关文章也都只是简单讲了如何调试单个文件，没有一些参数或者环境变量的设置。  
 
@@ -33,5 +33,5 @@ categories: backend
 
 为例，如下配置即可调试该命令：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-30-0aa3be8968.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-30-0aa3be8968.jpg)  
 

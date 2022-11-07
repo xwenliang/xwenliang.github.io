@@ -14,7 +14,7 @@ categories: frontend
 
 这是自己之前遇到过的一个坑，今天又有同事遇到了，想记录下自己当时解决这个问题的思路和过程。安装完 react-native-cli, 初始化项目，运行后却遇到如下报错：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-28-cacc1607ae.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-28-cacc1607ae.jpg)  
 
 既然有报错，那就去看看报错的这几行代码到底干了啥，按照提示的路径找到这个文件：  
 

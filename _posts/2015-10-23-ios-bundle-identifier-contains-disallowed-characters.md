@@ -14,7 +14,7 @@ categories: frontend
 
 今天往 Apple 服务器发包又碰到了钉子：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-29-f70fb047c8.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-29-f70fb047c8.jpg)  
 
 思前想后，自己只是改了两行逻辑代码，根本没有修改任何的配置，怎么会出现这个错误呢？再说苹果你也是够了，告诉我包里有非法字符，却不告诉我在哪里，这是让我去猜吗？没办法，只能猜了。  
 
@@ -22,7 +22,7 @@ categories: frontend
 
 为什么删除就好了呢，我们打开其中一个来看看：  
 
-![IMAGE]](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-29-dacb370ba4.jpg)  
+![IMAGE]]({{ site.gallery_prefix }}2022-04-29-dacb370ba4.jpg)  
 
 果然是乱码一堆啊，难怪告诉我有非法字符呢。不过也可能是我的编辑器编码不支持，用 xcode 打开就是正常的。但同样是 .plist 文件，用我的编辑器打开项目的 .plist 文件就是正常的类似于 xml 的一个文件。既然第三方资源包里的 .plist 文件说删就删掉，并且没有影响，那为啥作者还要在包里加这个只会起负面作用的文件呢？  
 

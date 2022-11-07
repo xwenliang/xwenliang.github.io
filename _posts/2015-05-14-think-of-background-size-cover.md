@@ -31,13 +31,13 @@ $img.css({
 
 最简单的方法，直接去浏览器里看这条属性是不是被"腰斩"了：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-30-572f69b331.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-30-572f69b331.jpg)  
 
 果然，不过想想也是，假如 css 里面有一条 margin-top, 再去行间写个 margin, 不覆盖才怪。  
 
 所以它不生效的真正原因就是被 background 给覆盖掉了。正确的姿势应该是：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-30-12ed1c5e7a.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-30-12ed1c5e7a.jpg)  
 
 这么简单的问题，当时居然都没有发现，还很自豪的以为自己发现了什么「新大陆」，想想着实可笑啊。  
 

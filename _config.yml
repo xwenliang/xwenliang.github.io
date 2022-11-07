@@ -21,6 +21,7 @@
 title: web 开发笔记
 description: "记录web开发中遇到的各种问题，及解决问题的思路和过程。如果你有好的建议或想法，欢迎前来交流。"
 keywords: "web开发笔记,web开发,前端开发,html5,nodejs"
+gallery_prefix: "https://gallery.xwenliang.cn/xwenliang/"
 author:
   name: "zooble"
   email: "wenliang.web@gmail.com"

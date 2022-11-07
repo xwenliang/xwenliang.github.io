@@ -62,11 +62,11 @@ TabBarItemIOS.ios.js
 
 赶紧查看下，当前 react-native 的版本是 `0.12.0`, 而官方的 stable 版本已经发布到了 `0.14.2`, 果断更新，然后是漫长的等待，更新就绪后再运行，发现还有报错：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-28-3df1d3c211.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-28-3df1d3c211.jpg)  
 
 这个报错总算让我看到了希望，因为这表示先前的语法错误都已经解决，这报的是执行阶段的错误啊！看了下代码，发现可能是由于 StatusBarIOS 这个组件没有引入导致的，先不管它，果断删掉，再运行，终于跑起来了：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-04-28-4c707d18db.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-28-4c707d18db.jpg)  
 
 示例代码：  
 

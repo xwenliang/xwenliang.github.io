@@ -17,7 +17,7 @@ categories: translation
 
 在新的 app 开发中或许我们可以不再需要 `scroll` 事件了。接下来我将演示当 `position:sticky` 的元素改变状态时如何使用 `IntersectionObserver` 来触发事件，但是不使用滚动监听事件。下面是例子:  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-4-5-020201e00e.gif)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-05-020201e00e.gif)  
 
 [例子](https://xwenliang.github.io/repro/sticky-position-event/sticky-position-event.html) \| [源码](https://github.com/xwenliang/xwenliang.github.io/tree/master/repro/sticky-position-event/sticky-position-event.html)  
 
@@ -56,12 +56,12 @@ document.addEventListener('sticky-change', e => {
 
 这个[例子](https://xwenliang.github.io/repro/sticky-position-event/sticky-position-event.html)就是使用这个事件的效果，当 header 变为 sticky 时添加阴影并且设置新的内容：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-4-5-020201e00e.gif)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-05-020201e00e.gif)  
 
 
 ### 不使用滚动事件的滚动效果  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-4-5-632630d740.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-05-632630d740.jpg)  
 
 我们先来下几个定义：  
 1. Scrolling container - 整个页面的内容区
@@ -78,7 +78,7 @@ document.addEventListener('sticky-change', e => {
 
 我们将要使用 `IntersectionObserver` 来代替 `scroll` 事件实现 `Headers` 进入或退出 `Sticky mode`. 给每个 `Sticky section` 的顶端和底端各添加一个个哨兵节点，用来获取滚动位置。当这两个节点进入或离开容器时，他们的可见状态将会发生变化从而触发 `IntersectionObserver`  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-4-5-36dfc1f929.gif)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-05-36dfc1f929.gif)  
 
 两个哨兵节点的作用：  
 1. `Scrolling down` - 当顶部哨兵节点穿过容器顶端时，`Headers` 变为 sticky  
@@ -88,13 +88,13 @@ document.addEventListener('sticky-change', e => {
 
 看下面的屏幕截图来理解上面四个事件发生的过程：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-4-5-443ef7d83c.gif)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-05-443ef7d83c.gif)  
 
 ### CSS
 
 哨兵节点是定位在每个段落的顶部和底部的。`.sticky_sentinel--top` 在标题的上方。`.sticky_sentinel--bottom` 在段落的底部：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-4-5-d0e62db99a.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-05-d0e62db99a.jpg)  
 
 ```css
 :root {
@@ -257,7 +257,7 @@ function fireEvent(stuck, target) {
 
 我们创建了自定义事件用来实现监听 `position: sticky` 的触发并添加滚动效果，且不使用 scroll 事件  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-4-5-020201e00e.gif)  
+![IMAGE]({{ site.gallery_prefix }}2022-04-05-020201e00e.gif)  
 
 [例子](https://xwenliang.github.io/repro/sticky-position-event/sticky-position-event.html) \| [源码](https://github.com/xwenliang/xwenliang.github.io/tree/master/repro/sticky-position-event/sticky-position-event.html)  
 

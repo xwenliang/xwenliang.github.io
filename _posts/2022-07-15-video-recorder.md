@@ -35,23 +35,23 @@ categories: frontend
 
 1. 微软 DRM SDK, 浏览器兼容较差  
 
-    ![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-07-15-a4bb0b5823.jpg)  
+    ![IMAGE]({{ site.gallery_prefix }}2022-07-15-a4bb0b5823.jpg)  
 
 2. RTMPE, Adobe 提出的产生于 FLASH 时代的视频加密传输协议。流媒体服务器软件价格贵，数据不能缓存，用户每次播放都要占用服务器带宽  
 
 3. HLS, Apple 提出的基于 http 协议的视频分片传输协议, PC Chrome 不支持，需要使用 Media Source Extensions 转码播放(西瓜播放器、jwplayer)  
 
-    ![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-07-15-41ec81e858.jpg)  
+    ![IMAGE]({{ site.gallery_prefix }}2022-07-15-41ec81e858.jpg)  
 
-    ![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-07-15-f77b775498.jpg)  
+    ![IMAGE]({{ site.gallery_prefix }}2022-07-15-f77b775498.jpg)  
 
 HLS 由两部分构成，一个是 .m3u8 文件，一个是 .ts 视频文件（TS 是视频文件格式的一种）。整个过程是，浏览器会首先去请求 .m3u8 的索引文件，然后解析 m3u8，找出对应的 .ts 文件链接，并开始下载  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-07-15-6fd21b095d.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-07-15-6fd21b095d.jpg)  
 
 HLS 原生支持客户端加密，只需要往 .m3u8 文件中添加 EXT-X-KEY 字段，值为客户端获取密钥的鉴权服务即可  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-07-15-189c200c46.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-07-15-189c200c46.jpg)  
 
 这是原生支持的方式，而查看我们目标网站的实现方式，由于是需要在 PC 端播放的，所以是利用了 Media Source Extensions 转码播放的，所以 ts 文件的解密也是自定义的过程  
 
@@ -256,13 +256,13 @@ manifest.json 加上 `"content_security_policy": "script-src 'self' 'unsafe-eval
 
 既然是用了 `HTMLMediaElement.captureStream()` 这个 API, 那我能不能屏蔽它呢？答案是可以的：  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-07-15-9b983eed58.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-07-15-9b983eed58.jpg)  
 
 **假如别人用了这个手段屏蔽了 API, 但我还是想下载怎么办？**  
 
 相信有很多种办法可以做到，这里我尝试了 cloneNode:  
 
-![IMAGE](https://cdn.jsdelivr.net/gh/xwenliang/gallery2022/2022-07-15-2c41b190d9.jpg)  
+![IMAGE]({{ site.gallery_prefix }}2022-07-15-2c41b190d9.jpg)  
 
 当然可以继续屏蔽 `HTMLElement.prototype.cloneNode`, 我们还可以使用 `outerHTML`  
 
