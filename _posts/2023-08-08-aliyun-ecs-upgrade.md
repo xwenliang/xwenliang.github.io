@@ -39,8 +39,8 @@ categories: backend
 
 ### 升级原因：安装 node@14 报错：  
 
-`node: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.16' not found (required by node)`  
-`node: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.17' not found (required by node)`  
+`node: /lib/x86_64-linux-gnu/libc.so.6: version 'GLIBC_2.16' not found (required by node)`  
+`node: /lib/x86_64-linux-gnu/libc.so.6: version 'GLIBC_2.17' not found (required by node)`  
 
 ubuntu12.04 只支持到 GLIBC_2.15
 
@@ -179,7 +179,9 @@ apt policy mysql-server 查看可安装的版本，发现只有 8.x.x
 > ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)  
 
 发现是没有指定连接的地址：  
-`mysql -u root -p -S /var/lib/mysql/mysql.sock` 成功  
+`mysql -u root -p -S /var/lib/mysql/mysql.sock`  
+
+成功  
 
 或者 `ln -s /tmp/mysql.sock /var/lib/mysql/mysql.sock`  
 可以在 /etc/my.cnf 文件中修改该地址  
