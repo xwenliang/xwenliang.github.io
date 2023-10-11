@@ -205,7 +205,7 @@ $text.getClientRects().length;
 </html>
 ```
 
-[运行效果](https://xwenliang.github.io/repro/text-fold-and-expand/css.html)  
+[运行效果](https://xwenliang.github.io/repro/text-fold-and-expand/js.html)  
 
 以上只是实现了带 `<br>` 标签的文本，如果有更复杂的样式和标签还需要进一步处理  
 
