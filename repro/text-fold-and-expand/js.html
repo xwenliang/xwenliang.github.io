@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> JS text fold & expand </title>
+    <meta charset="utf-8" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .text{
+            position: relative;
+            width: 200px;
+            background: #fff;
+            line-height: 20px;
+        }
+        .more{
+            margin-left: 5px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="text">你好你好你好你好你<br>好你好你好你好你好你好<br>你好你好你好你好你好你好你好你好<br>你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你<br>好你好你好<br>你好你好你好你好<br>你好你好你好你好你好<br>你好你你好你好你好你好你好你好你好</div>
+    <script>
+        (function(){
+            const limit = 5;
+            const $text = document.querySelector('.text');
+            const originHTML = $text.innerHTML;
+            let textComputedStyle = window.getComputedStyle($text);
+            let lines = parseFloat(textComputedStyle['height'])/parseFloat(textComputedStyle['line-height']);
+            function cropText(){
+                let index = 0;
+                let lis = [];
+                let targetHTML = '';
+                const reg = /<[^>]+>/ig;
+                while(lines > limit){
+                    lis = lis.length ? lis : $text.innerHTML.split(reg);
+                    lis[lis.length - 1] = lis[lis.length - 1].slice(0, -1);
+                    index += 1;
+                    // 删掉被删完的
+                    lis = lis.filter(li => li);
+                    targetHTML = `${lis.join('<br>')}<span class="js-more more">展开</span>`;
+                    $text.innerHTML = targetHTML;
+                    textComputedStyle = window.getComputedStyle($text);
+                    lines = parseFloat(textComputedStyle['height'])/parseFloat(textComputedStyle['line-height']);
+                }
+                return targetHTML;
+            };
+            if(lines > limit){
+                const targetHTML = cropText();
+                document.addEventListener('click', ev => {
+                    if([...ev.target.classList].includes('js-more')){
+                        $text.innerHTML = `${originHTML}<span class="js-fold more">收起</span>`;
+                    }
+                    if([...ev.target.classList].includes('js-fold')){
+                        $text.innerHTML = targetHTML;
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

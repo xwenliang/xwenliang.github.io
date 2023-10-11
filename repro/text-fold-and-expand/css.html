@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> CSS text fold & expand </title>
+    <meta charset="utf-8" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .text{
+            position: relative;
+            width: 200px;
+            background: #fff;
+            line-height: 20px;
+        }
+        .text-fold{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+        }
+        .text-fold::after{
+            position: absolute;
+            padding: 2px 2px 0 5px;
+            bottom: 0;
+            right: 10px;
+            content: '展开';
+            text-decoration: underline;
+            background: #fff;
+            cursor: pointer;
+        }
+        .text-all{
+            display: block;
+        }
+        .text-all::after{
+            position: static;
+            content: '收起';
+        }
+    </style>
+</head>
+<body>
+    <div class="text">你好你好你好你好你<br>好你好你好你好你好你好<br>你好你好你好你好你好你好你好你好<br>你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你<br>好你好你好<br>你好你好你好你好<br>你好你好你好你好你好<br>你好你你好你好你好你好你好你好你好</div>
+    <script>
+        (function(){
+            const limit = 5;
+            const $text = document.querySelector('.text');
+            const textComputedStyle = window.getComputedStyle($text);
+            if(parseFloat(textComputedStyle['height'])/parseFloat(textComputedStyle['line-height']) > limit){
+                $text.classList.add('text-fold');
+                $text.addEventListener('click', function(ev){
+                    this.classList.toggle('text-all');
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
