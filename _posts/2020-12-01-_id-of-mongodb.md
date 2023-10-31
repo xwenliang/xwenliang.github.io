@@ -34,7 +34,7 @@ categories: backend
 
 看到这里，好像并不能保证不重复，因为它只说了有个 3-byte 也就是6位16进制的自增 counter, 并且还是从一个随机值开始的，假如不幸正好随机到了最大值 `2^24=16,777,216` 附近，会不会再累加就溢出了，然后导致产生重复呢？
 
-然后我们找到了这个自增 counter 的[代码](https://github.com/mongodb/bson-ruby/blob/master/lib/bson/object_id.rb#L369-L378)：  
+然后我们找到了这个自增 counter 的[代码](https://github.com/mongodb/bson-ruby/blob/a316d7d7d536b40f917c763ddd548cf14e7059b1/lib/bson/object_id.rb#L369-L378)：  
 
 ```ruby
 # Return object id data based on the current time, incrementing the
